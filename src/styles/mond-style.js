@@ -1,3 +1,4 @@
+import Clutter from 'gi://Clutter';
 import St from 'gi://St';
 
 import { BaseStyle } from './base-style.js';
@@ -19,7 +20,7 @@ export class MondStyle extends BaseStyle {
         this._root = new St.BoxLayout({
             name: 'RainClockMond',
             style_class: 'rain-clock-mond',
-            vertical: true,
+            orientation: Clutter.Orientation.VERTICAL,
             reactive: false,
             can_focus: false,
             track_hover: false,

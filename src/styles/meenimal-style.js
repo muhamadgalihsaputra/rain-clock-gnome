@@ -113,7 +113,7 @@ export class MeenimalStyle extends BaseStyle {
 
         this._numbers = new St.BoxLayout({
             name: 'RainClockMeenimalNumbers',
-            vertical: true,
+            orientation: Clutter.Orientation.VERTICAL,
             reactive: false,
             can_focus: false,
             track_hover: false,
@@ -128,7 +128,7 @@ export class MeenimalStyle extends BaseStyle {
         this._root = new St.BoxLayout({
             name: 'RainClockMeenimal',
             style_class: 'rain-clock-meenimal',
-            vertical: true,
+            orientation: Clutter.Orientation.VERTICAL,
             reactive: false,
             can_focus: false,
             track_hover: false,
@@ -215,7 +215,7 @@ export class MeenimalStyle extends BaseStyle {
     _createNumberContainer(label) {
         const container = new St.BoxLayout({
             name: 'RainClockMeenimalNumberContainer',
-            vertical: false,
+            orientation: Clutter.Orientation.HORIZONTAL,
             reactive: false,
             can_focus: false,
             track_hover: false,

@@ -113,7 +113,7 @@ export class SummitStyle extends BaseStyle {
         this._root = new St.BoxLayout({
             name: 'RainClockSummit',
             style_class: 'rain-clock-summit',
-            vertical: true,
+            orientation: Clutter.Orientation.VERTICAL,
             reactive: false,
             can_focus: false,
             track_hover: false,
